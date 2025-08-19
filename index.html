@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalRooms - Rent & Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🏠 LocalRooms</h1>
+    <p>Find & Rent Rooms, Flats, PGs, and Shops in Your Local Area</p>
+  </header>
+
+  <!-- Search Filters -->
+  <section class="filters">
+    <input type="text" id="location" placeholder="Enter Location">
+    <select id="category">
+      <option value="">Select Category</option>
+      <option value="Room">Room</option>
+      <option value="Flat">Flat</option>
+      <option value="Shop">Shop</option>
+      <option value="PG">PG</option>
+    </select>
+    <input type="number" id="budget" placeholder="Max Budget (₹)">
+    <button onclick="filterListings()">Search</button>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="listings"></section>
+
+  <!-- Footer -->
+  <footer>
+    <p>📞 Contact: +91 6207789956 | WhatsApp: +91 6207789956</p>
+    <p>© 2025 LocalRooms. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
